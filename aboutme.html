@@ -6,7 +6,7 @@
   <title>About Me - Awalun Nisa</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-800 text-white font-sans"></body>
+<body class="bg-gray-800 text-white font-sans">
 
   <!-- Navbar -->
   <header class="bg-black">
@@ -46,7 +46,23 @@
     <!-- About Me Section -->
     <section class="py-16 px-4">
       <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        <img src="wawa.jpg" alt="Awalun Nisa" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-lg" />
+        
+        <!-- Foto dengan gaya dekoratif -->
+        <div class="relative w-40 h-40 md:w-60 md:h-60">
+          <!-- Lingkaran luar -->
+          <div class="absolute inset-0 rounded-full border-[6px] border-orange-400 z-10"></div>
+
+          <!-- Foto -->
+          <img src="wawa.jpg" alt="Awalun Nisa" class="w-full h-full object-cover rounded-full z-20 relative" />
+
+          <!-- Lingkaran dekoratif kiri atas -->
+          <div class="absolute w-6 h-6 md:w-8 md:h-8 bg-orange-500 rounded-full top-[-10px] left-[-10px] z-0"></div>
+
+          <!-- Lingkaran dekoratif kanan bawah -->
+          <div class="absolute w-5 h-5 md:w-6 md:h-6 bg-yellow-300 rounded-full bottom-[-10px] right-[-10px] z-0"></div>
+        </div>
+
+        <!-- Deskripsi -->
         <div>
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Awalun Nisa' Isro'in Nazilla</h2>
           <p class="text-lg leading-relaxed text-white mb-4">
